@@ -1,0 +1,5 @@
+# Unfortunately, the .dockerignore file is interpreted differently by the dockerfile/docker-client Maven plugin and the docker command-line client
+# Wildcards don't seem to work for directories in the Maven plugins (but they work for files), so all directories to ignore must be listed
+**
+!data/*
+!multiarch/*
