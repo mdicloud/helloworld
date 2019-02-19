@@ -3,3 +3,4 @@ __CROSS_COPY ./multiarch/qemu-__QEMU_ARCH__-static /usr/bin/
 RUN rm /etc/nginx/conf.d/*
 ADD ./data/hello.conf /etc/nginx/conf.d/
 ADD ./data/index.html /usr/share/nginx/html/
+__CROSS_RUN rm -f /usr/bin/qemu-__QEMU_ARCH__-static
